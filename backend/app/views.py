@@ -16,3 +16,8 @@ def home():
     )
 
     return intent,200
+
+@app.route('/')
+@cross_origin()
+def hello():
+    return "Amazon-Clone-API"
