@@ -1,5 +1,5 @@
 from app import app
-from flask import request
+from flask import request,send_from_directory
 import stripe
 from flask_cors import cross_origin
 
