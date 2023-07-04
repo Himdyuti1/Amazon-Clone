@@ -26,11 +26,11 @@ export const LoadingContext=createContext();
 
 function App() {
 
-  const [{},dispatch] = useContext(StateContext);
+  const [{name},dispatch] = useContext(StateContext);
   const [loading,setLoading]=useState(false);
   
   useEffect(() => {
-    setLoading(true);
+    // setLoading(true);
     auth.onAuthStateChanged((authUser)=>{
       if(authUser){
         let Name='';
@@ -44,6 +44,7 @@ function App() {
             name:Name,
             basket:newBasket
           })
+          console.log(name);
           setLoading(false);
         })
       }
