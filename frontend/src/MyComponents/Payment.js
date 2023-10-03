@@ -61,7 +61,7 @@ export const Payment = () => {
                         ...doc.data(),basket:[]
                     })
                     .then(()=>{
-                        navigate('/orders',{replace:true});
+                        navigate('/orders',{replace:false});
                     })
                 })
             })
