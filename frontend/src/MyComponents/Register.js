@@ -14,7 +14,7 @@ export const Register = () => {
         name:'',
         email:'',
         mobileNumber:'',
-        password:''
+        password:
     });
 
     const signUp=(e)=>{
